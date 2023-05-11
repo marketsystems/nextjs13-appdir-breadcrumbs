@@ -5,9 +5,9 @@
 node_modules
 
 # builds
+esm/
 build
 dist
-esm
 .rpt2_cache
 
 # misc
