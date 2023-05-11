@@ -1,0 +1,16 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "moduleResolution": "node",
+    "module": "esnext",
+    "removeComments": true,
+    "declaration": true, // generate .d.ts files
+    "sourceMap": true, // generate source map
+    "outDir": "dist", // output compiled js, d.ts, and source map to dist folder
+    "strict": true,
+    "jsx":"react",
+    "esModuleInterop": true
+  }
+}
