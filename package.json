@@ -1,8 +1,8 @@
 {
-  "name": "nextjs13-appdir-breadcrumbs",
-  "version": "1.0.0",
+  "name": "@marketsystems/nextjs13-appdir-breadcrumbs",
+  "version": "1.0.1",
   "description": "NextJs13 and new app dir breadcrumbs - updated version of nextjs-breadcrumbs for new app dir and removal of outdated dependencies",
-  "author": "T Smith",
+  "author": "T Smith (Original code by NiklasMencke)",
   "license": "ISC",
   "files": [
     "dist",
@@ -12,13 +12,18 @@
   "scripts": {
     "clean": "rimraf dist esm",
     "prebuild": "npm run clean",
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/ && copyfiles -u 1 src/**/*.css esm/ ",
     "build:esm": "tsc --target es2018 --outDir esm",
     "build:cjs": "tsc --target es2015 --module commonjs --outDir dist",
-    "build": "npm run lint && npm run build:esm && npm run build:cjs",
+    "build": "npm run lint && npm run build:esm && npm run build:cjs && npm run copy-files",
     "lint": "eslint . --ext .tsx"
   },
   "main": "dist/index.js",
   "module": "esm/index.js",
+  "peerDependencies": {
+    "next": "^13.2.0",
+    "react": "^18.2.0"
+  },
   "devDependencies": {
     "@types/node": "^20.1.2",
     "@types/react": "^18.2.6",
@@ -31,5 +36,19 @@
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.0",
     "typescript": "^5.0.4"
-  }
+  },
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marketsystems/nextjs13-appdir-breadcrumbs.git"
+  },
+  "keywords": [
+    "breadcrumbs",
+    "nextjs",
+    "app"
+  ],
+  "bugs": {
+    "url": "https://github.com/marketsystems/nextjs13-appdir-breadcrumbs/issues"
+  },
+  "homepage": "https://github.com/marketsystems/nextjs13-appdir-breadcrumbs#readme"
 }
