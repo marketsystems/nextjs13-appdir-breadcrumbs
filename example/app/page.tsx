@@ -1,4 +1,5 @@
 import Breadcrumbs from "@marketsystems/nextjs13-appdir-breadcrumbs";
+import "@marketsystems/nextjs13-appdir-breadcrumbs/dist/styles.css";
 import Link from "next/link";
 
 export default function Home() {

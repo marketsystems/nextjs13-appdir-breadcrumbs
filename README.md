@@ -18,7 +18,7 @@ npm install @marketsystems/nextjs13-appdir-breadcrumbs
 
 This component is highly customizable. You can provide your own CSS via classes or via inline styles.
 If you want to use the default styling however, you need to make sure to import the CSS file provided by this package.
-Inside your `page.tsx`(or `layout.tsx`) paste `import '@marketsystems/nextjs13-appdir-breadcrumbs/dist/index.css';` at the top. This is not needed, if you just want to use your custom styles.
+Inside your `page.tsx`(or `layout.tsx`) paste `import "@marketsystems/nextjs13-appdir-breadcrumbs/dist/styles.css";` at the top. This is not needed, if you just want to use your custom styles.
 
 ## Usage
 
