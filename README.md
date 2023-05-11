@@ -6,7 +6,7 @@ New example next13 app in examples folder
 
 > A dynamic, highly customizable breadcrumbs component for Next.js
 
-[![NPM](https://img.shields.io/npm/v/nextjs-breadcrumbs.svg)](https://www.npmjs.com/package/nextjs-breadcrumbs) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@marketsystems/nextjs13-appdir-breadcrumbs.svg)](https://www.npmjs.com/package/@marketsystems/nextjs13-appdir-breadcrumbs) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Installation
 
@@ -18,7 +18,7 @@ npm install @marketsystems/nextjs13-appdir-breadcrumbs
 
 This component is highly customizable. You can provide your own CSS via classes or via inline styles.
 If you want to use the default styling however, you need to make sure to import the CSS file provided by this package.
-Inside your `_app.js` paste `import 'nextjs-breadcrumbs/dist/index.css';` at the top. This is not needed, if you just want to use your custom styles.
+Inside your `page.tsx`(or `layout.tsx`) paste `import '@marketsystems/nextjs13-appdir-breadcrumbs/dist/index.css';` at the top. This is not needed, if you just want to use your custom styles.
 
 ## Usage
 
@@ -27,7 +27,7 @@ It will always display a dynamic Breadcrumb navigation, based on the current pat
 
 ```tsx
 import React from "react";
-import Breadcrumbs from "nextjs-breadcrumbs";
+import Breadcrumbs from "@marketsystems/nextjs13-appdir-breadcrumbs";
 
 const Example = () => {
   return <Breadcrumbs useDefaultStyle rootLabel="Home" />;
@@ -40,7 +40,7 @@ By default the breadcrumb labels are generated through the url path. In many cas
 
 ```tsx
 import React from "react";
-import Breadcrumbs from "nextjs-breadcrumbs";
+import Breadcrumbs from "@marketsystems/nextjs13-appdir-breadcrumbs";
 
 // Before: title.to.be.transformed  After: title to be transformed
 const Example = () => {
@@ -59,7 +59,7 @@ It's possible to pass a label transformation function to customize the labels.
 
 ```tsx
 import React from "react";
-import Breadcrumbs from "nextjs-breadcrumbs";
+import Breadcrumbs from "@marketsystems/nextjs13-appdir-breadcrumbs";
 
 const Example = () => {
   return (
@@ -77,7 +77,7 @@ It's possible to omit the root level entirely. This makes sense if you have an U
 
 ```tsx
 import React from "react";
-import Breadcrumbs from "nextjs-breadcrumbs";
+import Breadcrumbs from "@marketsystems/nextjs13-appdir-breadcrumbs";
 
 const Example = () => {
   return <Breadcrumbs omitRootLabel />;
@@ -90,7 +90,7 @@ It's possible to pass an array containing all the indexes of the path that shoul
 
 ```tsx
 import React from "react";
-import Breadcrumbs from "nextjs-breadcrumbs";
+import Breadcrumbs from "@marketsystems/nextjs13-appdir-breadcrumbs";
 
 // path: /nested/this-is-ommited will omit the this-is-ommited breadcrumb
 const Example = () => {

@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import "./styles.css";
 
 /**
  * Takes an URL String and removes query params and hash params
