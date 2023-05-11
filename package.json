@@ -1,6 +1,6 @@
 {
   "name": "@marketsystems/nextjs13-appdir-breadcrumbs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NextJs13 and new app dir breadcrumbs - updated version of nextjs-breadcrumbs for new app dir and removal of outdated dependencies",
   "author": "T Smith (Original code by NiklasMencke)",
   "license": "ISC",
